@@ -62,7 +62,7 @@ export const App = () => {
 
     return (
         <div>
-            <CodeEditor/>
+            <CodeEditor onChange={(value) => setInput(value)}/>
             <textarea value={input} onChange={(event => setInput(event.target.value))}/>
             <div>
                 <button onClick={handleClick}>Submit</button>
